@@ -1,0 +1,144 @@
+<mxfile host="app.diagrams.net" modified="2024-05-15T11:17:54.481Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="-C1Nv_EeXmzV7_xcFm2Q" version="24.2.7" type="device">
+  <diagram name="Page-1" id="sAeARjEisC57MULs9gea">
+    <mxGraphModel dx="1600" dy="885" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="SumU2cUbZqGHT67t2i9s-39" value="USERCASE IN UDOM-TIMETABLE-APP" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=5;fontSize=25;fontColor=#0000ff;" vertex="1" parent="1">
+          <mxGeometry x="195" y="5" width="480" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="SumU2cUbZqGHT67t2i9s-44" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="160" width="60" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="SumU2cUbZqGHT67t2i9s-46" value="Ask about&lt;div&gt;college, coarse, year&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="170" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="SumU2cUbZqGHT67t2i9s-49" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="195" y="200" as="sourcePoint" />
+            <mxPoint x="385" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SumU2cUbZqGHT67t2i9s-50" value="Enter App first time" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="240" y="170" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="SumU2cUbZqGHT67t2i9s-51" value="API&lt;div&gt;(BACKEND)&lt;/div&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="690" y="340" width="130" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="SumU2cUbZqGHT67t2i9s-52" value="LOCALHOST&lt;div&gt;DATABASE&lt;/div&gt;" style="shape=partialRectangle;whiteSpace=wrap;html=1;left=0;right=0;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="195" y="640" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="SumU2cUbZqGHT67t2i9s-55" value="" style="line;strokeWidth=2;direction=south;html=1;" vertex="1" parent="1">
+          <mxGeometry x="225" y="640" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="SumU2cUbZqGHT67t2i9s-56" value="" style="line;strokeWidth=2;direction=south;html=1;" vertex="1" parent="1">
+          <mxGeometry x="195" y="640" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="SumU2cUbZqGHT67t2i9s-57" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;endArrow=classic;html=1;curved=0;rounded=0;endSize=8;startSize=8;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="SumU2cUbZqGHT67t2i9s-46">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="560" y="260" as="sourcePoint" />
+            <mxPoint x="680" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SumU2cUbZqGHT67t2i9s-59" value="fetch data&lt;div&gt;&amp;nbsp;from api&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;rotation=0;" vertex="1" parent="1">
+          <mxGeometry x="610" y="350" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="SumU2cUbZqGHT67t2i9s-60" value="render data&amp;nbsp;&lt;div&gt;and send to&amp;nbsp;&lt;/div&gt;&lt;div&gt;local database&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="410" y="545" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="SumU2cUbZqGHT67t2i9s-61" value="" style="endArrow=classic;html=1;rounded=0;entryX=1.006;entryY=0.366;entryDx=0;entryDy=0;entryPerimeter=0;exitX=-0.042;exitY=0.787;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="SumU2cUbZqGHT67t2i9s-51" target="SumU2cUbZqGHT67t2i9s-60">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="680" y="540" as="sourcePoint" />
+            <mxPoint x="590" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SumU2cUbZqGHT67t2i9s-64" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="SumU2cUbZqGHT67t2i9s-65">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="153" y="240" as="sourcePoint" />
+            <mxPoint x="350" y="273" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="350" y="240" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SumU2cUbZqGHT67t2i9s-65" value="Enter App normally" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;rotation=0;" vertex="1" parent="1">
+          <mxGeometry x="190" y="240" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="SumU2cUbZqGHT67t2i9s-66" value="check from DB" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="280" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="SumU2cUbZqGHT67t2i9s-67" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="SumU2cUbZqGHT67t2i9s-66">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="110" y="480" as="sourcePoint" />
+            <mxPoint x="240" y="630" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="240" y="310" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SumU2cUbZqGHT67t2i9s-68" value="request to access database" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;rotation=-90;" vertex="1" parent="1">
+          <mxGeometry x="140" y="430" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="SumU2cUbZqGHT67t2i9s-69" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.49;exitY=0.248;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="SumU2cUbZqGHT67t2i9s-56">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="410" y="510" as="sourcePoint" />
+            <mxPoint x="90" y="480" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="90" y="660" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SumU2cUbZqGHT67t2i9s-70" value="display timetable" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="420" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="SumU2cUbZqGHT67t2i9s-71" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="SumU2cUbZqGHT67t2i9s-70">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="90" y="410" as="sourcePoint" />
+            <mxPoint x="90" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SumU2cUbZqGHT67t2i9s-72" value="data from local database" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;rotation=-90;" vertex="1" parent="1">
+          <mxGeometry y="560" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="SumU2cUbZqGHT67t2i9s-73" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.879;entryY=-0.053;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="SumU2cUbZqGHT67t2i9s-60" target="SumU2cUbZqGHT67t2i9s-52">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SumU2cUbZqGHT67t2i9s-75" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="SumU2cUbZqGHT67t2i9s-74">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="680" y="432.6521739130435" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SumU2cUbZqGHT67t2i9s-74" value="asynchronous&lt;div&gt;check&lt;br&gt;&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="390" y="400" width="120" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="SumU2cUbZqGHT67t2i9s-76" value="look changes" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="540" y="410" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="SumU2cUbZqGHT67t2i9s-77" value="data fetched" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="565" y="545" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="SumU2cUbZqGHT67t2i9s-81" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.958;entryY=0.659;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="670" y="450" as="sourcePoint" />
+            <mxPoint x="499.98" y="449.99500000000006" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SumU2cUbZqGHT67t2i9s-82" value="feedback" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="560" y="450" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="SumU2cUbZqGHT67t2i9s-84" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.346;entryY=-0.075;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="SumU2cUbZqGHT67t2i9s-74" target="SumU2cUbZqGHT67t2i9s-60">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="300" y="520" as="sourcePoint" />
+            <mxPoint x="350" y="470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SumU2cUbZqGHT67t2i9s-85" value="&lt;div style=&quot;text-wrap: wrap;&quot;&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="535" y="680" width="20" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="SumU2cUbZqGHT67t2i9s-88" value="&lt;div style=&quot;text-wrap: wrap; font-size: 11px;&quot;&gt;&amp;nbsp;if any changes&amp;nbsp;&lt;span style=&quot;background-color: initial; font-size: 11px;&quot;&gt;occurred,&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial; font-size: 11px;&quot;&gt;then fetch&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-wrap: wrap; font-size: 11px;&quot;&gt;&lt;span style=&quot;background-color: initial; font-size: 11px;&quot;&gt;&amp;nbsp;the whole dataset if&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial; font-size: 11px;&quot;&gt;there is any&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="290" y="490" width="200" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

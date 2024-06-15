@@ -1,0 +1,115 @@
+<mxfile host="app.diagrams.net" modified="2024-05-15T10:22:40.681Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="C0-rkZfj92GjBTuz7du2" version="24.2.7" type="device">
+  <diagram name="Page-1" id="sAeARjEisC57MULs9gea">
+    <mxGraphModel dx="1032" dy="557" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="SumU2cUbZqGHT67t2i9s-2" value="COARSE" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="40" y="120" width="190" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="SumU2cUbZqGHT67t2i9s-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="SumU2cUbZqGHT67t2i9s-4" target="SumU2cUbZqGHT67t2i9s-14">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="280" y="490" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="281" y="170" />
+              <mxPoint x="281" y="390" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SumU2cUbZqGHT67t2i9s-4" value="coarse_short" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="160" width="190" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="SumU2cUbZqGHT67t2i9s-5" value="coarse_long" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="180" width="190" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="SumU2cUbZqGHT67t2i9s-6" value="teacher" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="200" width="190" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="SumU2cUbZqGHT67t2i9s-8" value="TIMETABLE" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="320" y="240" width="190" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="SumU2cUbZqGHT67t2i9s-9" value="id" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="280" width="190" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="SumU2cUbZqGHT67t2i9s-10" value="date" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="300" width="190" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="SumU2cUbZqGHT67t2i9s-11" value="timetable" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="320" width="190" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="SumU2cUbZqGHT67t2i9s-12" value="time_start" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="340" width="190" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="SumU2cUbZqGHT67t2i9s-13" value="time_end" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="360" width="190" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="SumU2cUbZqGHT67t2i9s-14" value="coarse_short" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="380" width="190" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="SumU2cUbZqGHT67t2i9s-15" value="classes" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="400" width="190" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="SumU2cUbZqGHT67t2i9s-16" value="status(postponed/inclass/normal)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="420" width="190" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="SumU2cUbZqGHT67t2i9s-17" value="venue" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="440" width="190" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="SumU2cUbZqGHT67t2i9s-18" value="NOTIFICATIONS" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="610" y="120" width="190" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="SumU2cUbZqGHT67t2i9s-19" value="id" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="610" y="160" width="190" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="SumU2cUbZqGHT67t2i9s-20" value="pushed(bool)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="610" y="180" width="190" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="SumU2cUbZqGHT67t2i9s-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="SumU2cUbZqGHT67t2i9s-21" target="SumU2cUbZqGHT67t2i9s-9">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="560" y="340" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="561" y="210" />
+              <mxPoint x="561" y="290" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SumU2cUbZqGHT67t2i9s-21" value="for" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="610" y="200" width="190" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="SumU2cUbZqGHT67t2i9s-22" value="message" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="610" y="220" width="190" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="SumU2cUbZqGHT67t2i9s-23" value="header" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="610" y="240" width="190" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="SumU2cUbZqGHT67t2i9s-24" value="coarse_short" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="610" y="260" width="190" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="SumU2cUbZqGHT67t2i9s-28" value="LOCALHOST" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="320" y="500" width="190" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="SumU2cUbZqGHT67t2i9s-29" value="id" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="540" width="190" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="SumU2cUbZqGHT67t2i9s-30" value="last_synchronous" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="560" width="190" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="SumU2cUbZqGHT67t2i9s-31" value="programme" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="580" width="190" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="SumU2cUbZqGHT67t2i9s-32" value="year" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="600" width="190" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="SumU2cUbZqGHT67t2i9s-33" value="college" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="620" width="190" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="SumU2cUbZqGHT67t2i9s-34" value="update" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="640" width="190" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="SumU2cUbZqGHT67t2i9s-39" value="THE DATABASE IN UDOM-TIMETABLE-APP" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=5;fontSize=25;fontColor=#0000ff;" vertex="1" parent="1">
+          <mxGeometry x="170" y="5" width="530" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
