@@ -62,5 +62,36 @@ final Map<String, String> enUs = {
 // Network Error String
   "msg_network_err": "Network Error",
   "msg_something_went_wrong": "Something Went Wrong!",
+
+
+  "lbl_17th_june_2024": "17th June, 2024",
+  "lbl_21th_june_2024": "21th June, 2024",
+  "lbl_cp_222": "CP 222",
+  "lbl_cp_226": "CP 226",
+  "lbl_notifications": "Notifications",
+  "msg_test_will_be_next": "Test will be next Sunday!.",
+  "msg_this_is_the_message":
+  "This is the message that should be displayed on the single \nnotification of the use, the message may be longer than \nlike let’s say like 4 to 3 paragraphs.so we’ll enjoy making \nnotification.",
+  "msg_this_is_the_title": "This is the title of the notification.",
+
+  // ACTION Screen
+  "lbl_class_dismissed": "Class Dismissed",
+  "lbl_cp_221": "CP 221",
+  "lbl_notify_others": "Notify Others",
+  "msg_help_others_by_giving":
+  "Help others by giving an update, by \nchoosing either Lecture in class or \nClass Dismissed.",
+  "msg_lecture_in_class": "Lecture in Class",
+
+  // App navigation Screen
+  "lbl_action": "ACTION",
+  "lbl_app_navigation": "App Navigation",
+  "lbl_notification": "NOTIFICATION",
+  "msg_check_your_app_s":
+  "Check your app's UI from the below demo screens of your app.",
+
+// Network Error String
+  "msg_network_err": "Network Error",
+  "msg_something_went_wrong": "Something Went Wrong!",
+
 };
 

@@ -68,7 +68,7 @@ class AppNavigationScreenState extends State<AppNavigationScreen> {
                           context,
                           screenTitle: "lbl_comment".tr,
                           onTapScreenTitle: () =>
-                              onTapScreenTitle(AppRoutes.commentScreen),
+                              onTapScreenTitle(AppRoutes.actionScreen),
                         ),
                         _buildScreenTitle(
                           context,

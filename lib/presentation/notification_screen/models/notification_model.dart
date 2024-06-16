@@ -5,15 +5,16 @@ import 'notificationlist_item_model.dart'; // ignore_for_file: must_be_immutable
 class NotificationModel {
   List<NotificationlistItemModel> notificationlistItemList = [
     NotificationlistItemModel(
-        lectureImage: ImageConstant.imgImage15,
-        lectureTitle: "Lecture in Class: CP 224",
-        lectureStatus: "Lecture is in class now!",
-        timeAgo: "21 minutes ago"),
+        title: "This is the title of the notification.",
+        message:
+        "This is the message that should be displayed on the single \nnotification of the use, the message may be longer than \nlike let’s say like 4 to 3 paragraphs.so we’ll enjoy making \nnotification.",
+        date: "17th June, 2024"),
     NotificationlistItemModel(
-        lectureImage: ImageConstant.imgDismissImage1,
-        lectureTitle: "Class Dismiss: CP 224",
-        lectureStatus: "Lecture is dismissed.",
-        timeAgo: "2 hours  ago")
+        title: "Test will be next Sunday!.",
+        message:
+        "This is the message that should be displayed on the single \nnotification of the use, the message may be longer than \nlike let’s say like 4 to 3 paragraphs.so we’ll enjoy making \nnotification.",
+        date: "21th June, 2024")
   ];
+
 }
 

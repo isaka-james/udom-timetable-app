@@ -1,30 +1,20 @@
-import '../../../core/app_export.dart';
-
 /// This class is used in the [notificationlist_item_widget] screen.
-// ignore_for_file: must_be_immutable
 
 // ignore_for_file: must_be_immutable
 class NotificationlistItemModel {
-  NotificationlistItemModel(
-      {this.lectureImage,
-        this.lectureTitle,
-        this.lectureStatus,
-        this.timeAgo,
-        this.id}) {
-    lectureImage = lectureImage ?? ImageConstant.imgImage15;
-    lectureTitle = lectureTitle ?? "Lecture in Class: CP 224";
-    lectureStatus = lectureStatus ?? "Lecture is in class now!";
-    timeAgo = timeAgo ?? "21 minutes ago";
+  NotificationlistItemModel({this.title, this.message, this.date, this.id}) {
+    title = title ?? "This is the title of the notification.";
+    message = message ??
+        "This is the message that should be displayed on the single \nnotification of the use, the message may be longer than \nlike let’s say like 4 to 3 paragraphs.so we’ll enjoy making \nnotification.";
+    date = date ?? "17th June, 2024";
     id = id ?? "";
   }
 
-  String? lectureImage;
+  String? title;
 
-  String? lectureTitle;
+  String? message;
 
-  String? lectureStatus;
-
-  String? timeAgo;
+  String? date;
 
   String? id;
 }

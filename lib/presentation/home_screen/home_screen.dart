@@ -105,12 +105,10 @@ class HomeScreenState extends State<HomeScreen> {
     super.initState();
   }
 
-
   @override
   Widget build(BuildContext context) {
-    String formattedDate =
-    DateFormat("EEEE, yyyy MMMM d").format(DateTime.now());
-
+    String formattedDate = DateFormat("EEEE, yyyy MMMM d").format(DateTime.now());
+    final int id = 1; // Replace this with your actual ID
 
     return SafeArea(
       child: Scaffold(
@@ -120,73 +118,83 @@ class HomeScreenState extends State<HomeScreen> {
             Container(
               width: double.maxFinite,
               padding: EdgeInsets.symmetric(
-                horizontal: 21.h,
-                vertical: 35.v,
+                horizontal: 21.0,
+                vertical: 35.0,
               ),
-              decoration: AppDecoration.fillGray,
+              decoration: BoxDecoration(color: Color(0xFFF5F5F5)), // Assuming AppDecoration.fillGray is grey
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Padding(
-                    padding: EdgeInsets.only(left: 25.h),
-                    child: Text(
-                      "lbl_schedule".tr,
-                      style: CustomTextStyles.headlineLargeBlack900,
-                    ),
-                  ),
-                  SizedBox(height: 15.v),
-                  Padding(
-                    padding: EdgeInsets.only(
-                      left: 23.h,
-                      // right: 90.h,
-                    ),
+                    padding: EdgeInsets.only(left: 25.0),
                     child: Row(
-                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text(
-                          formattedDate,
-                          style: CustomTextStyles.titleLargeBlack900SemiBold,
+                          "Today",
+                          style: TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold), // Assuming CustomTextStyles.headlineLargeBlack900
                         ),
-                        CustomImageView(
-                          imagePath: ImageConstant.imgImage10,
-                          height: 15.v,
-                          width: 15.h,
-                          margin: EdgeInsets.only(
-                            left: 27.h,
-                            top: 7.v,
-                            bottom: 9.v,
+                        GestureDetector(
+                          onTap: () {
+                            Navigator.pushNamed(
+                              context,
+                              AppRoutes.notificationScreen,
+                              arguments: id,
+                            );
+                          },
+                          child: Image.asset(
+                            ImageConstant.imgImage1,
+                            height: 24.0,
+                            width: 24.0,
                           ),
                         ),
                       ],
                     ),
                   ),
-                  SizedBox(height: 10.v),
+                  SizedBox(height: 15.0),
                   Padding(
-                    padding: EdgeInsets.symmetric(
-                      horizontal: 21.h,
+                    padding: EdgeInsets.only(left: 23.0),
+                    child: Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          formattedDate,
+                          style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.w600), // Assuming CustomTextStyles.titleLargeBlack900SemiBold
+                        ),
+                        Container(
+                          margin: EdgeInsets.only(left: 27.0, top: 7.0, bottom: 9.0),
+                          child: Image.asset(
+                            ImageConstant.imgImage10,
+                            height: 15.0,
+                            width: 15.0,
+                          ),
+                        ),
+                      ],
                     ),
+                  ),
+                  SizedBox(height: 10.0),
+                  Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 21.0),
                     child: _buildCalendar(context),
                   ),
-                  SizedBox(height: 32.v),
+                  SizedBox(height: 32.0),
                 ],
               ),
             ),
-
             Expanded(
               child: SingleChildScrollView(
                 child: Container(
-                  decoration: AppDecoration.fillGray,
+                   // height: double.infinity,
+                  decoration: BoxDecoration(color: Color(0xFFF5F5F5)), // Assuming AppDecoration.fillGray is grey
                   child: _buildFullsingle(context),
                 ),
               ),
             ),
-
           ],
         ),
       ),
     );
   }
-
 
 
 
@@ -453,7 +461,7 @@ class HomeScreenState extends State<HomeScreen> {
         int id = 123; // Replace 123 with the actual id value
         Navigator.pushNamed(
           context,
-          AppRoutes.commentScreen,
+          AppRoutes.actionScreen,
           arguments: id,
         );
 

@@ -89,6 +89,21 @@ class CustomTextStyles {
 
 
 
+  // Title text style
+  static get titleLarge23 => theme.textTheme.titleLarge!.copyWith(
+    fontSize: 23.fSize,
+  );
+  // static get titleLargeBlack900 => theme.textTheme.titleLarge!.copyWith(
+  //   color: appTheme.black900,
+  // );
+  static get titleLargeBlack900Bold => theme.textTheme.titleLarge!.copyWith(
+    color: appTheme.black900,
+    fontSize: 23.fSize,
+    fontWeight: FontWeight.w700,
+  );
+
+
+
 
 
 

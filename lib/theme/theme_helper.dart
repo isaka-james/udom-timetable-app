@@ -146,5 +146,9 @@ class LightCodeColors {
 // Red
   Color get red50 => Color(0XFFFDF1F1);
   Color get red700 => Color(0XFFAD4B4B);
+
+
+// Green
+  Color get green300 => Color(0XFF5ADD85);
 }
 

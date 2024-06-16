@@ -61,7 +61,7 @@ class CustomElevatedButton extends BaseButton {
           Text(
             text,
             style: buttonTextStyle ??
-                CustomTextStyles.headlineSmallOnPrimaryExtraBold,
+                CustomTextStyles.titleSmallOnPrimary,
           ),
           rightIcon ?? const SizedBox.shrink()
         ],

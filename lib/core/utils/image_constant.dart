@@ -39,5 +39,18 @@ class ImageConstant {
 
   static String imageGreenCircleNotification = '$imagePath/green_notification.png';
 
+
+
+
+// NOTIFICATION images
+  static String imgImage1 = '$imagePath/bell.png';
+
+// ACTION images
+  static String imgImageRemovebgPreview2 =
+      '$imagePath/back_arrow.png';
+
+  static String imgImageRemovebgPreview =
+      '$imagePath/setting_time.png';
+
 }
 
