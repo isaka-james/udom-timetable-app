@@ -34,12 +34,13 @@ class NotificationlistItemWidget extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           SizedBox(height: 10.v),
-          CustomElevatedButton(
+          CustomElevatedNotification(
             height: 28.v,
             width: 96.h,
             text: "lbl_cp_222".tr,
 
           ),
+
           SizedBox(height: 6.v),
           Padding(
             padding: EdgeInsets.only(left: 8.h),
