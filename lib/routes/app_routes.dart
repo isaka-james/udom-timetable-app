@@ -37,6 +37,7 @@ class AppRoutes {
     welcomeScreen: WelcomeScreen.builder,
     homeScreen: HomeScreen.builder,
     actionScreen: (context) => ActionScreen(),
+    notificationScreen: NotificationScreen.builder,
     appNavigationScreen: AppNavigationScreen.builder,
     initialRoute: SplashScreen.builder
   };
