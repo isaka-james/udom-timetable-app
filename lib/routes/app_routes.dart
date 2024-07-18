@@ -8,6 +8,12 @@ import '../presentation/splash_screen/splash_screen.dart';
 import '../presentation/welcome_screen/welcome_screen.dart';
 import '../presentation/action_screen/action_screen.dart';
 
+class ActionScreenArguments {
+  final int id;
+
+  ActionScreenArguments(this.id);
+}
+
 class AppRoutes {
   static const String splashScreen = '/splash_screen';
 
@@ -30,8 +36,7 @@ class AppRoutes {
     firstUserScreen: FirstUserScreen.builder,
     welcomeScreen: WelcomeScreen.builder,
     homeScreen: HomeScreen.builder,
-    actionScreen: (context) => ActionScreen.builder(context), // Pass context only for now
-    notificationScreen: NotificationScreen.builder,
+    actionScreen: (context) => ActionScreen(),
     appNavigationScreen: AppNavigationScreen.builder,
     initialRoute: SplashScreen.builder
   };

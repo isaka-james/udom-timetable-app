@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:timetable/data/database_helper.dart';
 import '../../core/app_export.dart';
 import '../../theme/custom_button_style.dart';
 import '../../widgets/app_bar/appbar_leading_image.dart';
@@ -9,16 +10,13 @@ import 'provider/action_provider.dart';
 import 'models/action_model.dart';
 import 'provider/action_provider.dart';
 
-
 class ActionScreen extends StatefulWidget {
-  const ActionScreen({Key? key})
-      : super(
-    key: key,
-  );
+  const ActionScreen({Key? key}) : super(key: key);
 
   @override
   ActionScreenState createState() => ActionScreenState();
-  static Widget builder(BuildContext context) {
+
+  static Widget builder(BuildContext context, int passedInterger) {
     return ChangeNotifierProvider(
       create: (context) => ActionProvider(),
       child: ActionScreen(),
@@ -34,6 +32,7 @@ class ActionScreenState extends State<ActionScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final int timetableId = ModalRoute.of(context)!.settings.arguments as int;
     return SafeArea(
       child: Scaffold(
         backgroundColor: Color(0xFFF5F5F5),
@@ -46,7 +45,7 @@ class ActionScreenState extends State<ActionScreen> {
                 alignment: Alignment.bottomCenter,
                 children: [
                   _buildBackgroundSection(context),
-                  _buildCounterSection(context)
+                  _buildCounterSection(context, timetableId)
                 ],
               ),
             ),
@@ -70,7 +69,7 @@ class ActionScreenState extends State<ActionScreen> {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           CustomImageView(
-            imagePath: ImageConstant.imgImageRemovebgPreview,
+            imagePath: ImageConstant.imgImageSettingTime,
             height: 114.v,
             width: 140.h,
             alignment: Alignment.center,
@@ -79,17 +78,14 @@ class ActionScreenState extends State<ActionScreen> {
           Text(
             "lbl_notify_others".tr,
             style: TextStyle(
-            color: Color(0xFFFFFFFF),
+              color: Color(0xFFFFFFFF),
               fontSize: 25.fSize,
               fontFamily: 'Poppins',
               fontWeight: FontWeight.w600,
             ),
           ),
-
         ],
       ),
-
-
     );
   }
 
@@ -109,9 +105,14 @@ class ActionScreenState extends State<ActionScreen> {
             CustomAppBar(
               height: 34.v,
               leadingWidth: 60.h,
-              leading: AppbarLeadingImage(
-                imagePath: ImageConstant.imgImageRemovebgPreview2,
-                margin: EdgeInsets.only(left: 20.h),
+              leading: InkWell(
+                onTap: () {
+                  Navigator.pop(context);
+                },
+                child: AppbarLeadingImage(
+                  imagePath: ImageConstant.imgImageBackArrow,
+                  margin: EdgeInsets.only(left: 20.h),
+                ),
               ),
             ),
             SizedBox(height: 14.v),
@@ -124,7 +125,11 @@ class ActionScreenState extends State<ActionScreen> {
   }
 
   /// Section Widget
-  Widget _buildFormSection(BuildContext context) {
+  Future<Widget> _buildFormSection(BuildContext context, int id) async {
+    DatabaseHelper dbHelper = DatabaseHelper.instance;
+    Map<String, dynamic> timetableData = await dbHelper.queryTimetableForId(id);
+    String coarseShort = timetableData['coarse_short'] ?? 'N/A';
+
     return Expanded(
       child: Container(
         width: double.maxFinite,
@@ -136,7 +141,7 @@ class ActionScreenState extends State<ActionScreen> {
           mainAxisSize: MainAxisSize.min,
           children: [
             Text(
-              "lbl_cp_221".tr,
+              coarseShort,
               style: CustomTextStyles.titleLargeBlack900Bold,
             ),
             SizedBox(height: 8.v),
@@ -179,18 +184,24 @@ class ActionScreenState extends State<ActionScreen> {
     );
   }
 
-
-
-
   /// Section Widget
-  Widget _buildCounterSection(BuildContext context) {
+  Widget _buildCounterSection(BuildContext context, int id) {
     return Padding(
       padding: EdgeInsets.only(
         left: 22.h,
         right: 18.h,
       ),
-      child: Row(
-        children: [_buildFormSection(context)],
+      child: FutureBuilder<Widget>(
+        future: _buildFormSection(context, id),
+        builder: (context, snapshot) {
+          if (snapshot.hasData) {
+            return snapshot.data!;
+          } else if (snapshot.hasError) {
+            return Text('Error: ${snapshot.error}');
+          } else {
+            return CircularProgressIndicator();
+          }
+        },
       ),
     );
   }

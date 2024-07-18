@@ -406,7 +406,7 @@ class HomeScreenState extends State<HomeScreen> {
                           coarseFull: block['timetable'] ?? '',
                           programmes: block['classes'] ?? '',
                           venue: block['venue'] ?? '',
-                          link: '1', // Always set link to '1'
+                          link: int.parse(block['id']??'0'), // Always set link to '1'
                           status: isCurrentTimeInRange(block['time_start']??'', block['time_end']??''),
                         ),
                       ),
@@ -450,7 +450,7 @@ class HomeScreenState extends State<HomeScreen> {
       required String programmes,
       required String venue,
       required bool status,
-      required String link}) {
+      required int link}) {
     Color containerColor =
         status ? Theme.of(context).colorScheme.primary : Color(0XFFFFFFFF);
     Color counterColor =
@@ -458,11 +458,11 @@ class HomeScreenState extends State<HomeScreen> {
 
     return GestureDetector(
       onTap: () {
-        int id = 123; // Replace 123 with the actual id value
+       // int id = 123; // Replace 123 with the actual id value
         Navigator.pushNamed(
           context,
           AppRoutes.actionScreen,
-          arguments: id,
+          arguments: link,
         );
 
       },

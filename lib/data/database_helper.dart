@@ -15,6 +15,7 @@ class DatabaseHelper {
     _database = await _initDatabase();
     return _database!;
   }
+
   Future<Database> _initDatabase() async {
     sqfliteFfiInit(); // Initialize sqflite_ffi
 
@@ -42,11 +43,11 @@ class DatabaseHelper {
         },
       );
     } catch (e) {
-      print('Error initializing database(on openDatabase onCreateDB): $e'); // Log initialization error
+      print(
+          'Error initializing database(on openDatabase onCreateDB): $e'); // Log initialization error
       rethrow;
     }
   }
-
 
   void onCreateDB(Database db, int version) async {
     await db.execute('''
@@ -145,12 +146,14 @@ class DatabaseHelper {
   Future<int> updateCoarse(Map<String, dynamic> row) async {
     Database db = await instance.database;
     String id = row['coarse_short'];
-    return await db.update('COARSE', row, where: 'coarse_short = ?', whereArgs: [id]);
+    return await db
+        .update('COARSE', row, where: 'coarse_short = ?', whereArgs: [id]);
   }
 
   Future<int> deleteCoarse(String id) async {
     Database db = await instance.database;
-    return await db.delete('COARSE', where: 'coarse_short = ?', whereArgs: [id]);
+    return await db
+        .delete('COARSE', where: 'coarse_short = ?', whereArgs: [id]);
   }
 
   // CRUD Operations for TIMETABLE
@@ -159,9 +162,12 @@ class DatabaseHelper {
     return await db.insert('TIMETABLE', row);
   }
 
-  Future<List<Map<String, String?>>> queryTimetableForDate(DateTime selectedDate) async {
+  Future<List<Map<String, String?>>> queryTimetableForDate(
+      DateTime selectedDate) async {
     Database db = await instance.database;
-    String formattedDate = selectedDate.toIso8601String().split('T')[0]; // Get selected date in 'YYYY-MM-DD' format
+    String formattedDate = selectedDate
+        .toIso8601String()
+        .split('T')[0]; // Get selected date in 'YYYY-MM-DD' format
 
     // Query the database for entries with the selected date
     List<Map<String, dynamic>> result = await db.query(
@@ -182,6 +188,19 @@ class DatabaseHelper {
     return convertedResult;
   }
 
+  Future<Map<String, dynamic>> queryTimetableForId(int id) async {
+    Database db = await instance.database;
+
+    // Query the database for the entry with the specified ID
+    List<Map<String, dynamic>> result = await db.query(
+      'TIMETABLE',
+      where: 'id = ?',
+      whereArgs: [id],
+    );
+
+    // Return the first entry (assuming there's only one entry with the specified ID)
+    return result.first;
+  }
 
   Future<int> updateTimetable(Map<String, dynamic> row) async {
     Database db = await instance.database;
@@ -208,7 +227,8 @@ class DatabaseHelper {
   Future<int> updateNotification(Map<String, dynamic> row) async {
     Database db = await instance.database;
     int id = row['id'];
-    return await db.update('NOTIFICATIONS', row, where: 'id = ?', whereArgs: [id]);
+    return await db
+        .update('NOTIFICATIONS', row, where: 'id = ?', whereArgs: [id]);
   }
 
   Future<int> deleteNotification(int id) async {
@@ -240,13 +260,10 @@ class DatabaseHelper {
 
   Future<void> close() async {
     if (_database != null) {
-
       await _database!.close();
       _database = null;
     }
   }
-
-
 
   Future<void> populateDatabase() async {
     Database db = await instance.database;
@@ -262,7 +279,7 @@ class DatabaseHelper {
     List<Map<String, dynamic>> timetableData = [
       {
         'id': 1,
-        'date': '2024-06-15',
+        'date': '2024-07-17',
         'timetable': 'Sample Timetable 1',
         'time_start': '01:00 PM',
         'time_end': '02:00 AM',
@@ -273,7 +290,7 @@ class DatabaseHelper {
       },
       {
         'id': 2,
-        'date': '2024-06-15',
+        'date': '2024-07-17',
         'timetable': 'Sample Timetable 2',
         'time_start': '02:30 AM',
         'time_end': '04:30 AM',
@@ -337,5 +354,4 @@ class DatabaseHelper {
       await db.insert('LOCALHOST', entry);
     }
   }
-
 }

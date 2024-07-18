@@ -46,10 +46,10 @@ class ImageConstant {
   static String imgImage1 = '$imagePath/bell.png';
 
 // ACTION images
-  static String imgImageRemovebgPreview2 =
+  static String imgImageBackArrow =
       '$imagePath/back_arrow.png';
 
-  static String imgImageRemovebgPreview =
+  static String imgImageSettingTime =
       '$imagePath/setting_time.png';
 
 }
