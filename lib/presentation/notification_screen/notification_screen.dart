@@ -67,7 +67,7 @@ class NotificationScreenState extends State<NotificationScreen> {
       ),
       actions: [
         AppbarTrailingIconbutton(
-          imagePath: ImageConstant.imgImage1,
+          imagePath: ImageConstant.bellImage,
           margin: EdgeInsets.only(
             top: 14.v,
             right: 12.h,

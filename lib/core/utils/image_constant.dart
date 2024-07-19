@@ -43,7 +43,7 @@ class ImageConstant {
 
 
 // NOTIFICATION images
-  static String imgImage1 = '$imagePath/bell.png';
+  static String bellImage = '$imagePath/bell.png';
 
 // ACTION images
   static String imgImageBackArrow =

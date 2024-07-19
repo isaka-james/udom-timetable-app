@@ -143,7 +143,7 @@ class HomeScreenState extends State<HomeScreen> {
                             );
                           },
                           child: Image.asset(
-                            ImageConstant.imgImage1,
+                            ImageConstant.bellImage,
                             height: 24.0,
                             width: 24.0,
                           ),
