@@ -37,7 +37,7 @@ class NotificationlistItemWidget extends StatelessWidget {
           CustomElevatedNotification(
             height: 28.v,
             width: 96.h,
-            text: "lbl_cp_222".tr,
+            text: notificationlistItemModelObj.coarseShort!,
 
           ),
 

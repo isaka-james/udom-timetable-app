@@ -79,7 +79,7 @@ class NotificationScreenState extends State<NotificationScreen> {
     );
   }
 
-  /// Section Widget
+ /// Section Widget
   Widget _buildNotificationList(BuildContext context) {
     return SizedBox(
       width: double.maxFinite,
@@ -93,11 +93,10 @@ class NotificationScreenState extends State<NotificationScreen> {
                 height: 10.v,
               );
             },
-            itemCount:
-            provider.notificationModelObj.notificationlistItemList.length,
+            itemCount: provider.notificationModelObj.notificationlistItemList.length,
             itemBuilder: (context, index) {
               NotificationlistItemModel model =
-              provider.notificationModelObj.notificationlistItemList[index];
+                  provider.notificationModelObj.notificationlistItemList[index];
               return NotificationlistItemWidget(
                 model,
               );

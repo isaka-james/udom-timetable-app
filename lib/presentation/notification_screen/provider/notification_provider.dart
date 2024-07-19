@@ -1,21 +1,38 @@
 import 'package:flutter/material.dart';
-import '../../../core/app_export.dart';
+import 'package:timetable/presentation/notification_screen/models/notificationlist_item_model.dart';
+import '../../../data/database_helper.dart';
 import '../models/notification_model.dart';
-import '../models/notificationlist_item_model.dart';
 
-/// A provider class for the NotificationScreen.
-///
-/// This provider manages the state of the NotificationScreen, including the
-/// current notificationModelObj
-// ignore_for_file: must_be_immutable
-
-// ignore_for_file: must_be_immutable
 class NotificationProvider extends ChangeNotifier {
-  NotificationModel notificationModelObj = NotificationModel();
+  late NotificationModel notificationModelObj;
 
-  @override
-  void dispose() {
-    super.dispose();
+  NotificationProvider() {
+    notificationModelObj = NotificationModel();
+    fetchNotifications();
+  }
+
+  Future<void> fetchNotifications() async {
+    DatabaseHelper dbHelper = DatabaseHelper.instance;
+    List<Map<String, dynamic>> notificationsData =
+        await dbHelper.queryAllNotifications();
+
+    // Clear the existing data
+    notificationModelObj.notificationlistItemList.clear();
+
+    // Populate the notificationlistItemList with NotificationlistItemModel objects
+    for (var entry in notificationsData) {
+      notificationModelObj.notificationlistItemList.add(NotificationlistItemModel(
+        id: entry['id'],
+        //pushed: entry['pushed'],
+        //forUser: entry['for'],
+        message: entry['message'],
+        title: entry['header'],
+        coarseShort: entry['coarse_short'],
+        date: entry['date'],
+      ));
+    }
+
+    // Notify listeners that the data has been updated
+    notifyListeners();
   }
 }
-
