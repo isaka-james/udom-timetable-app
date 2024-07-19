@@ -223,8 +223,12 @@ class DatabaseHelper {
 
   Future<List<Map<String, dynamic>>> queryAllNotifications() async {
     Database db = await instance.database;
-    return await db.query('NOTIFICATIONS');
-  }
+
+    // Order the results by date in descending order
+    String orderBy = 'date DESC';
+
+    return await db.query('NOTIFICATIONS', orderBy: orderBy);
+}
 
   Future<int> updateNotification(Map<String, dynamic> row) async {
     Database db = await instance.database;
