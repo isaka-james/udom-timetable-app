@@ -221,13 +221,16 @@ class DatabaseHelper {
     return await db.insert('NOTIFICATIONS', row);
   }
 
-  Future<List<Map<String, dynamic>>> queryAllNotifications() async {
-    Database db = await instance.database;
+Future<List<Map<String, dynamic>>> queryAllNotifications() async {
+  Database db = await instance.database;
 
-    // Order the results by date in descending order
-    String orderBy = 'date DESC';
+  // Order the results by date in descending order
+  String orderBy = 'date DESC';
 
-    return await db.query('NOTIFICATIONS', orderBy: orderBy);
+  // Limit the results to 10 rows
+  int limit = 10;
+
+  return await db.query('NOTIFICATIONS', orderBy: orderBy, limit: limit);
 }
 
   Future<int> updateNotification(Map<String, dynamic> row) async {
