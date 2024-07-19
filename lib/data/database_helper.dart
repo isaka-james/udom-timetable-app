@@ -52,11 +52,12 @@ class DatabaseHelper {
   void onCreateDB(Database db, int version) async {
     await db.execute('''
       CREATE TABLE COARSE (
-        coarse_short TEXT PRIMARY KEY,
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        coarse_short TEXT UNIQUE,
         coarse_long TEXT,
         teacher TEXT
       )
-    ''');
+      ''');
 
     await db.execute('''
       CREATE TABLE TIMETABLE (
@@ -81,6 +82,7 @@ class DatabaseHelper {
         message TEXT,
         header TEXT,
         coarse_short TEXT,
+        date TEXT,
         FOREIGN KEY (coarse_short) REFERENCES COARSE (coarse_short)
       )
     ''');
@@ -310,7 +312,8 @@ class DatabaseHelper {
         'for': 'Recipient A',
         'message': 'Notification Message A',
         'header': 'Notification Header A',
-        'coarse_short': 'C1'
+        'coarse_short': 'C1',
+        'date': '2024-07-17'
       },
       {
         'id': 2,
@@ -318,7 +321,8 @@ class DatabaseHelper {
         'for': 'Recipient B',
         'message': 'Notification Message B',
         'header': 'Notification Header B',
-        'coarse_short': 'C2'
+        'coarse_short': 'C2',
+        'date': '2024-07-18'
       },
       // Add more notifications data here...
     ];
