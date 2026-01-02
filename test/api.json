@@ -1,0 +1,92 @@
+{
+  "monday": [
+    {
+      "time_start": "08:00",
+      "time_end": "10:00",
+      "staff_name": "John Mushi",
+      "subject_name": "Mathematics",
+      "short_name": "MATH",
+      "session_type": "lecture",
+      "venue": "Room A1",
+      "state": "active"
+    },
+    {
+      "time_start": "11:00",
+      "time_end": "13:00",
+      "staff_name": "Grace Nyerere",
+      "subject_name": "Physics",
+      "short_name": "PHY",
+      "session_type": "lab",
+      "venue": "Lab 2",
+      "state": "cancelled"
+    }
+  ],
+  "tuesday": [
+    {
+      "time_start": "09:00",
+      "time_end": "11:00",
+      "staff_name": "Ahmed Salim",
+      "subject_name": "Computer Science",
+      "short_name": "CS",
+      "session_type": "lecture",
+      "venue": "Room B3",
+      "state": "active"
+    }
+  ],
+  "wednesday": [
+    {
+      "time_start": "08:30",
+      "time_end": "10:30",
+      "staff_name": "Mary Joseph",
+      "subject_name": "Chemistry",
+      "short_name": "CHEM",
+      "session_type": "lab",
+      "venue": "Chem Lab 1",
+      "state": "active"
+    },
+    {
+      "time_start": "14:00",
+      "time_end": "16:00",
+      "staff_name": "Peter Luka",
+      "subject_name": "Biology",
+      "short_name": "BIO",
+      "session_type": "lecture",
+      "venue": "Room C2",
+      "state": "active"
+    }
+  ],
+  "thursday": [
+    {
+      "time_start": "10:00",
+      "time_end": "12:00",
+      "staff_name": "Neema Kweka",
+      "subject_name": "Economics",
+      "short_name": "ECO",
+      "session_type": "seminar",
+      "venue": "Seminar Hall",
+      "state": "active"
+    }
+  ],
+  "friday": [
+    {
+      "time_start": "09:00",
+      "time_end": "11:00",
+      "staff_name": "Daniel Mbise",
+      "subject_name": "Statistics",
+      "short_name": "STAT",
+      "session_type": "lecture",
+      "venue": "Room D1",
+      "state": "cancelled"
+    },
+    {
+      "time_start": "13:00",
+      "time_end": "15:00",
+      "staff_name": "Asha Hassan",
+      "subject_name": "Project Work",
+      "short_name": "PROJ",
+      "session_type": "practical",
+      "venue": "Project Lab",
+      "state": "active"
+    }
+  ]
+}
