@@ -29,7 +29,7 @@
       "session_type": "Lecture",
       "venue": "LRB 004D",
       "state": "active"
-    },
+    }
   ],
   "tuesday": [
     {
@@ -38,7 +38,7 @@
       "staff_name": "Ahmed Salim",
       "subject_name": "Computer Science",
       "short_name": "CS",
-      "session_type": "lecture",
+      "session_type": "Lecture",
       "venue": "Room B3",
       "state": "active"
     }
@@ -60,7 +60,7 @@
       "staff_name": "Peter Luka",
       "subject_name": "Biology",
       "short_name": "BIO",
-      "session_type": "lecture",
+      "session_type": "Lecture",
       "venue": "Room C2",
       "state": "active"
     }
