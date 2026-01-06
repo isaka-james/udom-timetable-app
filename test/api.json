@@ -33,47 +33,57 @@
   ],
   "tuesday": [
     {
-      "time_start": "09:00",
-      "time_end": "11:00",
-      "staff_name": "Ahmed Salim",
-      "subject_name": "Computer Science",
-      "short_name": "CS",
+      "time_start": "08:00",
+      "time_end": "09:30",
+      "staff_name": "Dr. Goodiel Moshi",
+      "subject_name": "Biometric Security",
+      "short_name": "IA 314 B",
       "session_type": "Lecture",
-      "venue": "Room B3",
+      "venue": "LRB 103",
+      "state": "active"
+    },
+    {
+      "time_start": "12:00",
+      "time_end": "14:00",
+      "staff_name": "Dr. Daniel Ngondya",
+      "subject_name": "Cyber Criminology",
+      "short_name": "IA 418",
+      "session_type": "Lecture",
+      "venue": "LRB 002A",
       "state": "active"
     }
   ],
   "wednesday": [
     {
-      "time_start": "07:30",
-      "time_end": "09:30",
-      "staff_name": "Dr. Majuto Manyilizu",
-      "subject_name": "ICT Project Management",
-      "short_name": "BT 413 A",
+      "time_start": "14:30",
+      "time_end": "16:30",
+      "staff_name": "Dr. Salehe Mrutu",
+      "subject_name": "Database Security",
+      "short_name": "IA 414",
       "session_type": "Lecture",
-      "venue": "LRB 004C",
-      "state": "active"
-    },
-    {
-      "time_start": "14:00",
-      "time_end": "16:00",
-      "staff_name": "Peter Luka",
-      "subject_name": "Biology",
-      "short_name": "BIO",
-      "session_type": "Lecture",
-      "venue": "Room C2",
+      "venue": "LRA 019",
       "state": "active"
     }
   ],
   "thursday": [
     {
-      "time_start": "10:00",
-      "time_end": "12:00",
-      "staff_name": "Neema Kweka",
-      "subject_name": "Economics",
-      "short_name": "ECO",
-      "session_type": "seminar",
-      "venue": "Seminar Hall",
+      "time_start": "09:30",
+      "time_end": "11:30",
+      "staff_name": "Mr. Ramadhani Mbaga",
+      "subject_name": "SI 311 C",
+      "short_name": "SI 311 C",
+      "session_type": "Lecture",
+      "venue": "LRB 106",
+      "state": "active"
+    },
+    {
+      "time_start": "13:30",
+      "time_end": "15:30",
+      "staff_name": "Dr. Tabu Kondo",
+      "subject_name": "Cyber Threat Intelligence",
+      "short_name": "IA 417",
+      "session_type": "Lecture",
+      "venue": "LRB 003D",
       "state": "active"
     }
   ],
@@ -82,7 +92,7 @@
       "time_start": "09:30",
       "time_end": "11:30",
       "staff_name": "Mr. Ramadhani Mbaga",
-      "subject_name": "ICT Entrepreneurship",
+      "subject_name": "SI 311",
       "short_name": "SI 311 C",
       "session_type": "Lecture",
       "venue": "LRB 106",
