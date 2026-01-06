@@ -151,13 +151,13 @@
   ],
   "rooms": [
     {"LRB 003D" : "location in text1"},
-    {"Auditorium": "location in text2"},
+    {"Auditorium": "The building that is opposite to CIVE adminstration building."},
     {"LRB 102": "location in text3"},
-    {"LRB 106": "location in text4"},
+    {"LRB 106": "Inside the LRB building, first floor on the right-side, then the 1st room on the left."},
     {"LRB 004D": "location in text5"},
     {"LRB 002A" : "location in text6"},
     {"LRA 019": "location in text7"},
-    {"LRB 105": "location in text8"},
+    {"LRB 105": "Inside the LRB building, first floor on the right-side, then the 1st room on the right."},
     {"LRB 103": "location in text9"}
   ]
 }
