@@ -1,6 +1,26 @@
 {
   "monday": [
     {
+      "time_start": "05:30",
+      "time_end": "06:30",
+      "staff_name": "Mr. Nasolwa",
+      "subject_name": "Mathematical Foundations of Information Security",
+      "short_name": "IA 112",
+      "session_type": "Exam",
+      "venue": "Auditorium",
+      "state": "active"
+    },
+    {
+      "time_start": "07:00",
+      "time_end": "09:00",
+      "staff_name": "Mr. Nasolwa",
+      "subject_name": "Mathematical Foundations of Information Security",
+      "short_name": "IA 112",
+      "session_type": "Lecture",
+      "venue": "LRB 102",
+      "state": "active"
+    },
+    {
       "time_start": "09:30",
       "time_end": "11:30",
       "staff_name": "Mr. Hamis Fereji",
@@ -51,6 +71,16 @@
       "session_type": "Lecture",
       "venue": "LRB 002A",
       "state": "active"
+    },
+    {
+      "time_start": "15:30",
+      "time_end": "17:30",
+      "staff_name": "Mr. Albert",
+      "subject_name": "Linear Algebra for ICT",
+      "short_name": "TN 112",
+      "session_type": "Lecture",
+      "venue": "LRB 105",
+      "state": "active"
     }
   ],
   "wednesday": [
@@ -69,9 +99,9 @@
     {
       "time_start": "09:30",
       "time_end": "11:30",
-      "staff_name": "Mr. Ramadhani Mbaga",
-      "subject_name": "SI 311 C",
-      "short_name": "SI 311 C",
+      "staff_name": "Mr. Bakii",
+      "subject_name": "System Architecture",
+      "short_name": "CT 211",
       "session_type": "Lecture",
       "venue": "LRB 106",
       "state": "active"
@@ -104,6 +134,16 @@
       "staff_name": "Dr. Tabu Kondo",
       "subject_name": "Cyber Threat Intelligence",
       "short_name": "IA 417",
+      "session_type": "Lecture",
+      "venue": "LRB 003D",
+      "state": "active"
+    },
+    {
+      "time_start": "17:00",
+      "time_end": "19:00",
+      "staff_name": "Dr. Daniel Ngondya",
+      "subject_name": "Computer Forensics And Investigation",
+      "short_name": "IA 212",
       "session_type": "Lecture",
       "venue": "LRB 003D",
       "state": "active"
