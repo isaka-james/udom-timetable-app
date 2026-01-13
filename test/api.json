@@ -1,16 +1,6 @@
 {
   "monday": [
     {
-      "time_start": "05:30",
-      "time_end": "06:30",
-      "staff_name": "Mr. Nasolwa",
-      "subject_name": "Mathematical Foundations of Information Security",
-      "short_name": "IA 112",
-      "session_type": "Exam",
-      "venue": "Auditorium",
-      "state": "active"
-    },
-    {
       "time_start": "07:00",
       "time_end": "09:00",
       "staff_name": "Mr. Nasolwa",
@@ -84,6 +74,16 @@
     }
   ],
   "wednesday": [
+    {
+      "time_start": "11:30",
+      "time_end": "13:30",
+      "staff_name": "Dr. Naufal. Kitonka",
+      "subject_name": "Law Enforcement",
+      "short_name": "LW 4110",
+      "session_type": "Lecture",
+      "venue": "LRB 103",
+      "state": "active"
+    },
     {
       "time_start": "14:30",
       "time_end": "16:30",
